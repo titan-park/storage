@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package>
+  <name>tcpControl</name>
+  <version>0.0.0</version>
+  <description>The tcpControl package</description>
+
+  <maintainer email="pi@todo.todo">pi</maintainer>
+
+
+  <license>TODO</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>stdmsgs</build_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>stdmsgs</run_depend>
+
+  <export>
+
+  </export>
+</package>
