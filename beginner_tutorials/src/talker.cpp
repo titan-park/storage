@@ -13,14 +13,14 @@ int main(int argc, char **argv){
 
 	ros::Rate loop_rate(10);
 
-	int count = 0;
-
+	char order;
 	while(ros::ok()){
 
 		std_msgs::String msg;
 
 		std::stringstream ss;
-		ss << "hello world " << count;
+		std::cin>>order;
+		ss << order;
 		msg.data = ss.str();
 
 		ROS_INFO("%s", msg.data.c_str());
@@ -30,7 +30,6 @@ int main(int argc, char **argv){
 		ros::spinOnce();
 
 		loop_rate.sleep();
-		++count;
 	}
 
 	return 0;
